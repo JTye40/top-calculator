@@ -1,0 +1,93 @@
+body {
+  background-color: black;
+}
+
+#calculator-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  height: 330px;
+  background: rgb(36, 36, 165);
+  border: outset 4px blue;
+  border-radius: 16px;
+  margin: 40px;
+  box-shadow: 12px 8px 40px darkslateblue;
+}
+
+#display {
+  width: 200px;
+  min-height: 60px;
+  max-height: 60px;
+  background: white;
+  margin: 12px;
+  border: inset 4px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+#data {
+  margin: 10px;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px 12px 12px 12px;
+  width: 200px;
+  height: 500px;
+  gap: 10px
+}
+
+.button-style {
+  min-width: 40px;
+  max-height: 40px;
+  cursor: pointer;
+  border: outset 2px;
+  border-radius: 8px;
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+.operators {
+  background-color: #59e725fb;
+  border-color: yellow;
+}
+
+.operators:hover {
+  background-color: yellowgreen;
+}
+
+#clear {
+  width: 196px;
+  background-color: crimson;
+  border-color: red;
+  font-weight: 900;
+}
+
+#clear:hover {
+  background-color: darkred;
+}
+
+#equal-sign {
+  background-color: green;
+  border-color: lightgreen;
+}
+
+#equal-sign:hover {
+  background-color: darkgreen;
+}
+
+.numbers:hover {
+  background-color: lightgray;
+}
+
+button:active {
+  transform: translateY(2px);
+}
